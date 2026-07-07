@@ -1,12 +1,15 @@
+import 'dart:convert';
 import 'dart:io';
 //import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trizy_app/di/locator.dart';
 import 'package:trizy_app/repositories/cart_repository.dart';
 import 'package:trizy_app/repositories/products_repository.dart';
 import 'package:trizy_app/routing/app_router.dart';
+import 'package:trizy_app/services/demo/demo_data_service.dart';
 import 'package:trizy_app/theme/colors.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:trizy_app/utils/auth_check.dart';
@@ -25,6 +28,11 @@ void main() async {
 
     await dotenv.load();
 
+    // Load demo data before setting up the locator
+    if (useDemoData) {
+      await DemoDataService.instance.load();
+    }
+
     setupLocator();
 
     if (Platform.isAndroid) {
@@ -37,8 +45,13 @@ void main() async {
       );
     }
 
-    setupStripeKey();
-    await Stripe.instance.applySettings();
+    if (useDemoData) {
+      // In demo mode, auto-authenticate and skip Stripe
+      await _setupDemoUser();
+    } else {
+      setupStripeKey();
+      await Stripe.instance.applySettings();
+    }
 
     await initializeApp();
 
@@ -46,6 +59,22 @@ void main() async {
   } catch (e) {
     print("Initialization error: $e");
   }
+}
+
+/// Sets up a fake authenticated user for demo mode
+Future<void> _setupDemoUser() async {
+  final prefs = await SharedPreferences.getInstance();
+  // Set a demo access token so the app thinks the user is authenticated
+  await prefs.setString('accessToken', 'demo_access_token');
+  await prefs.setString('refreshToken', 'demo_refresh_token');
+  // Set demo user info
+  await prefs.setString('user', jsonEncode({
+    'id': 'user_001',
+    'email': 'demo@trizy.app',
+    'firstName': 'Ahmad',
+    'lastName': 'Demo',
+    'isSubscriber': true,
+  }));
 }
 
 Future<void> initializeApp() async {

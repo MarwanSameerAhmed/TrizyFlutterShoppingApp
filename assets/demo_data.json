@@ -1,0 +1,905 @@
+{
+  "categories": {
+    "success": true,
+    "categories": [
+      {
+        "_id": "cat_001",
+        "name": "Electronics",
+        "description": "Smartphones, laptops, tablets and more",
+        "parentCategory": null,
+        "isActive": true,
+        "createdAt": "2025-01-15T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_002",
+        "name": "Fashion",
+        "description": "Clothing, shoes, and accessories for men and women",
+        "parentCategory": null,
+        "isActive": true,
+        "createdAt": "2025-01-15T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_003",
+        "name": "Home & Kitchen",
+        "description": "Furniture, kitchen appliances, and home decor",
+        "parentCategory": null,
+        "isActive": true,
+        "createdAt": "2025-01-15T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_004",
+        "name": "Sports & Outdoors",
+        "description": "Fitness equipment, outdoor gear, and sportswear",
+        "parentCategory": null,
+        "isActive": true,
+        "createdAt": "2025-02-10T08:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_005",
+        "name": "Beauty & Personal Care",
+        "description": "Skincare, makeup, and grooming products",
+        "parentCategory": null,
+        "isActive": true,
+        "createdAt": "2025-02-10T08:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_006",
+        "name": "Smartphones",
+        "description": "Latest smartphones and mobile devices",
+        "parentCategory": "cat_001",
+        "isActive": true,
+        "createdAt": "2025-01-20T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_007",
+        "name": "Laptops",
+        "description": "Notebooks, ultrabooks, and gaming laptops",
+        "parentCategory": "cat_001",
+        "isActive": true,
+        "createdAt": "2025-01-20T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_008",
+        "name": "Men's Clothing",
+        "description": "T-shirts, jeans, jackets, and formal wear for men",
+        "parentCategory": "cat_002",
+        "isActive": true,
+        "createdAt": "2025-01-20T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      },
+      {
+        "_id": "cat_009",
+        "name": "Women's Clothing",
+        "description": "Dresses, tops, skirts, and formal wear for women",
+        "parentCategory": "cat_002",
+        "isActive": true,
+        "createdAt": "2025-01-20T10:00:00.000Z",
+        "updatedAt": "2025-06-01T12:00:00.000Z"
+      }
+    ]
+  },
+
+  "products": {
+    "success": true,
+    "products": [
+      {
+        "_id": "prod_001",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+          "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=800",
+          "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800"
+        ],
+        "title": "iPhone 15 Pro Max - 256GB",
+        "description": "Experience the ultimate iPhone with the A17 Pro chip, titanium design, and an advanced camera system. Features a 6.7-inch Super Retina XDR display with ProMotion technology, USB-C connector, and up to 29 hours of video playback.",
+        "price": 1199.99,
+        "salePrice": 1049.99,
+        "oldPrice": 1199.99,
+        "stockCount": 25,
+        "category": {
+          "_id": "cat_006",
+          "name": "Smartphones",
+          "description": "Latest smartphones and mobile devices"
+        },
+        "tags": ["apple", "iphone", "smartphone", "5g", "pro", "titanium"],
+        "cargoWeight": 0.45,
+        "createdAt": "2025-03-01T10:00:00.000Z",
+        "updatedAt": "2025-06-15T14:30:00.000Z",
+        "averageRating": 4.8,
+        "likeCount": 342,
+        "reviewCount": 89
+      },
+      {
+        "_id": "prod_002",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800",
+          "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=800"
+        ],
+        "title": "Samsung Galaxy S24 Ultra",
+        "description": "The Galaxy S24 Ultra features a built-in S Pen, a stunning 6.8-inch QHD+ Dynamic AMOLED display, and Galaxy AI capabilities. Powered by Snapdragon 8 Gen 3 with a 200MP main camera and 5000mAh battery.",
+        "price": 1299.99,
+        "salePrice": null,
+        "oldPrice": null,
+        "stockCount": 18,
+        "category": {
+          "_id": "cat_006",
+          "name": "Smartphones",
+          "description": "Latest smartphones and mobile devices"
+        },
+        "tags": ["samsung", "galaxy", "android", "5g", "s-pen", "ai"],
+        "cargoWeight": 0.48,
+        "createdAt": "2025-02-15T09:00:00.000Z",
+        "updatedAt": "2025-06-10T11:00:00.000Z",
+        "averageRating": 4.6,
+        "likeCount": 278,
+        "reviewCount": 65
+      },
+      {
+        "_id": "prod_003",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800",
+          "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800",
+          "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800"
+        ],
+        "title": "MacBook Pro 16\" M3 Max",
+        "description": "The most powerful MacBook Pro ever. Featuring the M3 Max chip with up to 128GB unified memory, a stunning Liquid Retina XDR display, and up to 22 hours of battery life. Perfect for professionals and creators.",
+        "price": 3499.99,
+        "salePrice": 3199.99,
+        "oldPrice": 3499.99,
+        "stockCount": 10,
+        "category": {
+          "_id": "cat_007",
+          "name": "Laptops",
+          "description": "Notebooks, ultrabooks, and gaming laptops"
+        },
+        "tags": ["apple", "macbook", "laptop", "m3", "pro", "creator"],
+        "cargoWeight": 2.5,
+        "createdAt": "2025-01-20T08:00:00.000Z",
+        "updatedAt": "2025-06-12T16:00:00.000Z",
+        "averageRating": 4.9,
+        "likeCount": 512,
+        "reviewCount": 127
+      },
+      {
+        "_id": "prod_004",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800"
+        ],
+        "title": "Nike Air Max 270 React",
+        "description": "The Nike Air Max 270 React combines lifestyle versatility with the ultimate in comfort. It features Nike React foam and a large Max Air unit for all-day cushioning that's lightweight and responsive.",
+        "price": 159.99,
+        "salePrice": 119.99,
+        "oldPrice": 159.99,
+        "stockCount": 45,
+        "category": {
+          "_id": "cat_002",
+          "name": "Fashion",
+          "description": "Clothing, shoes, and accessories for men and women"
+        },
+        "tags": ["nike", "shoes", "sneakers", "air-max", "running", "comfort"],
+        "cargoWeight": 0.85,
+        "createdAt": "2025-04-01T10:00:00.000Z",
+        "updatedAt": "2025-06-20T09:00:00.000Z",
+        "averageRating": 4.5,
+        "likeCount": 198,
+        "reviewCount": 56
+      },
+      {
+        "_id": "prod_005",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800",
+          "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800"
+        ],
+        "title": "Sony WH-1000XM5 Headphones",
+        "description": "Industry-leading noise canceling with Auto NC Optimizer. Exceptionally comfortable and lightweight design. Crystal clear hands-free calling with 4 beamforming microphones. Up to 30 hours of battery life.",
+        "price": 399.99,
+        "salePrice": 329.99,
+        "oldPrice": 399.99,
+        "stockCount": 32,
+        "category": {
+          "_id": "cat_001",
+          "name": "Electronics",
+          "description": "Smartphones, laptops, tablets and more"
+        },
+        "tags": ["sony", "headphones", "noise-canceling", "wireless", "bluetooth", "audio"],
+        "cargoWeight": 0.55,
+        "createdAt": "2025-03-10T10:00:00.000Z",
+        "updatedAt": "2025-06-18T10:00:00.000Z",
+        "averageRating": 4.7,
+        "likeCount": 421,
+        "reviewCount": 103
+      },
+      {
+        "_id": "prod_006",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cda3b3a?w=800",
+          "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
+        ],
+        "title": "Modern Scandinavian Sofa - Grey",
+        "description": "Elegant 3-seater Scandinavian-inspired sofa with solid wood legs and premium fabric upholstery. Features high-density foam cushions for maximum comfort. Dimensions: 220cm x 85cm x 80cm.",
+        "price": 899.99,
+        "salePrice": null,
+        "oldPrice": null,
+        "stockCount": 8,
+        "category": {
+          "_id": "cat_003",
+          "name": "Home & Kitchen",
+          "description": "Furniture, kitchen appliances, and home decor"
+        },
+        "tags": ["sofa", "furniture", "scandinavian", "living-room", "modern", "grey"],
+        "cargoWeight": 35.0,
+        "createdAt": "2025-02-28T10:00:00.000Z",
+        "updatedAt": "2025-06-05T10:00:00.000Z",
+        "averageRating": 4.4,
+        "likeCount": 156,
+        "reviewCount": 42
+      },
+      {
+        "_id": "prod_007",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800",
+          "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800"
+        ],
+        "title": "Premium Cotton Oversized T-Shirt",
+        "description": "Ultra-soft 100% organic cotton oversized t-shirt. Features a relaxed fit with dropped shoulders and ribbed crew neckline. Available in multiple colors. Machine washable.",
+        "price": 49.99,
+        "salePrice": 34.99,
+        "oldPrice": 49.99,
+        "stockCount": 120,
+        "category": {
+          "_id": "cat_008",
+          "name": "Men's Clothing",
+          "description": "T-shirts, jeans, jackets, and formal wear for men"
+        },
+        "tags": ["tshirt", "cotton", "oversized", "casual", "streetwear", "organic"],
+        "cargoWeight": 0.3,
+        "createdAt": "2025-04-15T10:00:00.000Z",
+        "updatedAt": "2025-06-22T10:00:00.000Z",
+        "averageRating": 4.3,
+        "likeCount": 89,
+        "reviewCount": 34
+      },
+      {
+        "_id": "prod_008",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800",
+          "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800"
+        ],
+        "title": "Apple Watch Ultra 2",
+        "description": "The most rugged and capable Apple Watch. Features a 49mm titanium case, precision dual-frequency GPS, up to 36 hours of battery life, and an ultra-bright 3000-nit display. Water resistant to 100m.",
+        "price": 799.99,
+        "salePrice": null,
+        "oldPrice": null,
+        "stockCount": 15,
+        "category": {
+          "_id": "cat_001",
+          "name": "Electronics",
+          "description": "Smartphones, laptops, tablets and more"
+        },
+        "tags": ["apple", "watch", "smartwatch", "fitness", "titanium", "gps"],
+        "cargoWeight": 0.35,
+        "createdAt": "2025-03-20T10:00:00.000Z",
+        "updatedAt": "2025-06-25T10:00:00.000Z",
+        "averageRating": 4.8,
+        "likeCount": 367,
+        "reviewCount": 91
+      },
+      {
+        "_id": "prod_009",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800",
+          "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
+        ],
+        "title": "Yoga Mat Premium - 6mm",
+        "description": "Professional-grade yoga mat with superior grip and cushioning. Made from eco-friendly TPE material. Non-slip surface on both sides. Includes carrying strap. Dimensions: 183cm x 61cm x 6mm.",
+        "price": 59.99,
+        "salePrice": 44.99,
+        "oldPrice": 59.99,
+        "stockCount": 75,
+        "category": {
+          "_id": "cat_004",
+          "name": "Sports & Outdoors",
+          "description": "Fitness equipment, outdoor gear, and sportswear"
+        },
+        "tags": ["yoga", "fitness", "mat", "exercise", "eco-friendly", "gym"],
+        "cargoWeight": 1.2,
+        "createdAt": "2025-05-01T10:00:00.000Z",
+        "updatedAt": "2025-06-20T10:00:00.000Z",
+        "averageRating": 4.6,
+        "likeCount": 134,
+        "reviewCount": 47
+      },
+      {
+        "_id": "prod_010",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800",
+          "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800"
+        ],
+        "title": "Vitamin C Brightening Serum",
+        "description": "Advanced 20% Vitamin C serum with Hyaluronic Acid and Vitamin E. Brightens skin, reduces dark spots, and promotes collagen production. Suitable for all skin types. 30ml bottle.",
+        "price": 39.99,
+        "salePrice": null,
+        "oldPrice": null,
+        "stockCount": 60,
+        "category": {
+          "_id": "cat_005",
+          "name": "Beauty & Personal Care",
+          "description": "Skincare, makeup, and grooming products"
+        },
+        "tags": ["skincare", "serum", "vitamin-c", "brightening", "anti-aging", "organic"],
+        "cargoWeight": 0.15,
+        "createdAt": "2025-04-20T10:00:00.000Z",
+        "updatedAt": "2025-06-18T10:00:00.000Z",
+        "averageRating": 4.5,
+        "likeCount": 203,
+        "reviewCount": 78
+      },
+      {
+        "_id": "prod_011",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800",
+          "https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?w=800"
+        ],
+        "title": "iPad Pro 12.9\" M2 - 512GB",
+        "description": "Supercharged by the M2 chip. Stunning 12.9-inch Liquid Retina XDR display with ProMotion. Ultra Wide front camera with Center Stage. Thunderbolt/USB 4 connectivity. Wi-Fi 6E support.",
+        "price": 1399.99,
+        "salePrice": 1249.99,
+        "oldPrice": 1399.99,
+        "stockCount": 12,
+        "category": {
+          "_id": "cat_001",
+          "name": "Electronics",
+          "description": "Smartphones, laptops, tablets and more"
+        },
+        "tags": ["apple", "ipad", "tablet", "m2", "pro", "creative"],
+        "cargoWeight": 0.7,
+        "createdAt": "2025-02-10T10:00:00.000Z",
+        "updatedAt": "2025-06-14T10:00:00.000Z",
+        "averageRating": 4.7,
+        "likeCount": 289,
+        "reviewCount": 72
+      },
+      {
+        "_id": "prod_012",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800",
+          "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800"
+        ],
+        "title": "Classic Leather Jacket - Black",
+        "description": "Timeless black leather jacket crafted from genuine lambskin leather. Features a YKK zipper, quilted lining, and multiple pockets. Perfect for casual and semi-formal occasions.",
+        "price": 299.99,
+        "salePrice": 249.99,
+        "oldPrice": 299.99,
+        "stockCount": 20,
+        "category": {
+          "_id": "cat_008",
+          "name": "Men's Clothing",
+          "description": "T-shirts, jeans, jackets, and formal wear for men"
+        },
+        "tags": ["jacket", "leather", "classic", "men", "fashion", "premium"],
+        "cargoWeight": 1.5,
+        "createdAt": "2025-03-15T10:00:00.000Z",
+        "updatedAt": "2025-06-20T10:00:00.000Z",
+        "averageRating": 4.6,
+        "likeCount": 178,
+        "reviewCount": 51
+      },
+      {
+        "_id": "prod_013",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+          "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+        ],
+        "title": "Premium Espresso Machine",
+        "description": "Professional-grade espresso machine with 15-bar pressure pump, built-in grinder, and steam wand for frothing milk. Features a PID temperature controller for perfect extraction every time.",
+        "price": 649.99,
+        "salePrice": 549.99,
+        "oldPrice": 649.99,
+        "stockCount": 14,
+        "category": {
+          "_id": "cat_003",
+          "name": "Home & Kitchen",
+          "description": "Furniture, kitchen appliances, and home decor"
+        },
+        "tags": ["coffee", "espresso", "machine", "kitchen", "barista", "premium"],
+        "cargoWeight": 8.5,
+        "createdAt": "2025-04-05T10:00:00.000Z",
+        "updatedAt": "2025-06-22T10:00:00.000Z",
+        "averageRating": 4.8,
+        "likeCount": 245,
+        "reviewCount": 63
+      },
+      {
+        "_id": "prod_014",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
+          "https://images.unsplash.com/photo-1518459031867-a89b944bffe4?w=800"
+        ],
+        "title": "Floral Summer Dress",
+        "description": "Beautiful floral print summer dress made from lightweight chiffon fabric. Features a V-neckline, adjustable spaghetti straps, and a flowy A-line silhouette. Perfect for summer outings.",
+        "price": 79.99,
+        "salePrice": null,
+        "oldPrice": null,
+        "stockCount": 55,
+        "category": {
+          "_id": "cat_009",
+          "name": "Women's Clothing",
+          "description": "Dresses, tops, skirts, and formal wear for women"
+        },
+        "tags": ["dress", "floral", "summer", "women", "chiffon", "casual"],
+        "cargoWeight": 0.25,
+        "createdAt": "2025-05-10T10:00:00.000Z",
+        "updatedAt": "2025-06-25T10:00:00.000Z",
+        "averageRating": 4.4,
+        "likeCount": 167,
+        "reviewCount": 39
+      },
+      {
+        "_id": "prod_015",
+        "imageURLs": [
+          "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?w=800",
+          "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800"
+        ],
+        "title": "Adjustable Dumbbell Set - 50lbs",
+        "description": "Space-saving adjustable dumbbell set that replaces 15 sets of weights. Quick-change mechanism allows you to switch from 5 to 50 lbs in seconds. Durable steel construction with ergonomic grip.",
+        "price": 349.99,
+        "salePrice": 299.99,
+        "oldPrice": 349.99,
+        "stockCount": 22,
+        "category": {
+          "_id": "cat_004",
+          "name": "Sports & Outdoors",
+          "description": "Fitness equipment, outdoor gear, and sportswear"
+        },
+        "tags": ["fitness", "dumbbell", "weights", "gym", "adjustable", "strength"],
+        "cargoWeight": 25.0,
+        "createdAt": "2025-03-25T10:00:00.000Z",
+        "updatedAt": "2025-06-15T10:00:00.000Z",
+        "averageRating": 4.7,
+        "likeCount": 198,
+        "reviewCount": 58
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 3,
+      "totalProducts": 15
+    },
+    "subCategories": [
+      {
+        "_id": "cat_006",
+        "name": "Smartphones",
+        "description": "Latest smartphones and mobile devices"
+      },
+      {
+        "_id": "cat_007",
+        "name": "Laptops",
+        "description": "Notebooks, ultrabooks, and gaming laptops"
+      },
+      {
+        "_id": "cat_008",
+        "name": "Men's Clothing",
+        "description": "T-shirts, jeans, jackets, and formal wear for men"
+      },
+      {
+        "_id": "cat_009",
+        "name": "Women's Clothing",
+        "description": "Dresses, tops, skirts, and formal wear for women"
+      }
+    ]
+  },
+
+  "deals": {
+    "deals": [
+      {
+        "dealOrder": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=800",
+        "title": "Summer Sale 🔥 Up to 50% Off",
+        "description": "Huge discounts on electronics, fashion, and more. Limited time offer!",
+        "action": "category:cat_001",
+        "aspectRatio": "16:9"
+      },
+      {
+        "dealOrder": 2,
+        "imageUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800",
+        "title": "New Fashion Collection",
+        "description": "Discover the latest trends in fashion",
+        "action": "category:cat_002",
+        "aspectRatio": "16:9"
+      },
+      {
+        "dealOrder": 3,
+        "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800",
+        "title": "Flash Deal ⚡ iPhone 15 Pro",
+        "description": "Get the latest iPhone at an unbeatable price",
+        "action": "product:prod_001",
+        "aspectRatio": "16:9"
+      },
+      {
+        "dealOrder": 4,
+        "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800",
+        "title": "Fitness Essentials 💪",
+        "description": "Everything you need for your fitness journey",
+        "action": "category:cat_004",
+        "aspectRatio": "4:3"
+      },
+      {
+        "dealOrder": 5,
+        "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800",
+        "title": "Beauty Deals 💄",
+        "description": "Premium skincare and beauty products",
+        "action": "category:cat_005",
+        "aspectRatio": "4:3"
+      }
+    ]
+  },
+
+  "reviews": {
+    "success": true,
+    "reviews": [
+      {
+        "_id": "rev_001",
+        "productId": "prod_001",
+        "userId": {
+          "_id": "user_002",
+          "userFirstName": "Sarah",
+          "userLastName": "Ahmed"
+        },
+        "orderId": "order_001",
+        "rating": 5.0,
+        "comment": "Absolutely love this phone! The camera quality is stunning and the titanium design feels premium. Battery life is incredible.",
+        "createdAt": "2025-05-20T14:30:00.000Z",
+        "updatedAt": "2025-05-20T14:30:00.000Z"
+      },
+      {
+        "_id": "rev_002",
+        "productId": "prod_001",
+        "userId": {
+          "_id": "user_003",
+          "userFirstName": "Mohammed",
+          "userLastName": "Ali"
+        },
+        "orderId": "order_002",
+        "rating": 4.5,
+        "comment": "Great phone overall. The action button is a nice addition. Only wish the charging was a bit faster.",
+        "createdAt": "2025-05-25T10:00:00.000Z",
+        "updatedAt": "2025-05-25T10:00:00.000Z"
+      },
+      {
+        "_id": "rev_003",
+        "productId": "prod_003",
+        "userId": {
+          "_id": "user_004",
+          "userFirstName": "Fatima",
+          "userLastName": "Hassan"
+        },
+        "orderId": "order_003",
+        "rating": 5.0,
+        "comment": "Best laptop I've ever owned. The M3 Max chip handles everything I throw at it - video editing, 3D rendering, you name it!",
+        "createdAt": "2025-04-15T16:00:00.000Z",
+        "updatedAt": "2025-04-15T16:00:00.000Z"
+      },
+      {
+        "_id": "rev_004",
+        "productId": "prod_005",
+        "userId": {
+          "_id": "user_005",
+          "userFirstName": "Omar",
+          "userLastName": "Khalid"
+        },
+        "orderId": "order_004",
+        "rating": 4.0,
+        "comment": "Noise cancellation is top-notch. Very comfortable for long listening sessions. Sound quality is excellent for the price.",
+        "createdAt": "2025-06-01T09:00:00.000Z",
+        "updatedAt": "2025-06-01T09:00:00.000Z"
+      },
+      {
+        "_id": "rev_005",
+        "productId": "prod_004",
+        "userId": {
+          "_id": "user_006",
+          "userFirstName": "Nora",
+          "userLastName": "Salem"
+        },
+        "orderId": "order_005",
+        "rating": 4.5,
+        "comment": "Super comfortable shoes! I wear them every day. The React foam makes a huge difference compared to other sneakers.",
+        "createdAt": "2025-06-10T12:00:00.000Z",
+        "updatedAt": "2025-06-10T12:00:00.000Z"
+      },
+      {
+        "_id": "rev_006",
+        "productId": "prod_013",
+        "userId": {
+          "_id": "user_007",
+          "userFirstName": "Khalid",
+          "userLastName": "Mansour"
+        },
+        "orderId": "order_006",
+        "rating": 5.0,
+        "comment": "This espresso machine is a game changer! Cafe-quality coffee at home. The built-in grinder is super convenient.",
+        "createdAt": "2025-06-05T08:00:00.000Z",
+        "updatedAt": "2025-06-05T08:00:00.000Z"
+      },
+      {
+        "_id": "rev_007",
+        "productId": "prod_006",
+        "userId": {
+          "_id": "user_008",
+          "userFirstName": "Layla",
+          "userLastName": "Ibrahim"
+        },
+        "orderId": "order_007",
+        "rating": 4.0,
+        "comment": "Beautiful sofa! Looks exactly like the pictures. Very comfortable and the grey color goes with everything.",
+        "createdAt": "2025-05-30T15:00:00.000Z",
+        "updatedAt": "2025-05-30T15:00:00.000Z"
+      },
+      {
+        "_id": "rev_008",
+        "productId": "prod_010",
+        "userId": {
+          "_id": "user_009",
+          "userFirstName": "Reem",
+          "userLastName": "Abdullah"
+        },
+        "orderId": "order_008",
+        "rating": 4.5,
+        "comment": "My skin has never looked better! Noticed a difference in just 2 weeks. The texture is lightweight and absorbs quickly.",
+        "createdAt": "2025-06-15T11:00:00.000Z",
+        "updatedAt": "2025-06-15T11:00:00.000Z"
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 1,
+      "totalReviews": 8
+    }
+  },
+
+  "cart": {
+    "ownerId": "user_001",
+    "items": [
+      {
+        "productId": "prod_001",
+        "title": "iPhone 15 Pro Max - 256GB",
+        "imageURL": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+        "cargoWeight": 0.45,
+        "stockCount": 25,
+        "price": 1049.99,
+        "quantity": 1
+      },
+      {
+        "productId": "prod_005",
+        "title": "Sony WH-1000XM5 Headphones",
+        "imageURL": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800",
+        "cargoWeight": 0.55,
+        "stockCount": 32,
+        "price": 329.99,
+        "quantity": 1
+      },
+      {
+        "productId": "prod_007",
+        "title": "Premium Cotton Oversized T-Shirt",
+        "imageURL": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800",
+        "cargoWeight": 0.3,
+        "stockCount": 120,
+        "price": 34.99,
+        "quantity": 2
+      }
+    ],
+    "updatedAt": "2025-06-28T14:30:00.000Z",
+    "cargoFee": 12.99
+  },
+
+  "orders": {
+    "success": true,
+    "orders": [
+      {
+        "_id": "order_001",
+        "userId": "user_001",
+        "deliveryAddress": {
+          "_id": "addr_001",
+          "address": "123 King Fahd Road, Al Olaya District",
+          "city": "Riyadh",
+          "state": "Riyadh Province",
+          "country": "Saudi Arabia"
+        },
+        "paymentIntentId": "pi_1ABC123DEF456",
+        "amount": 1049.99,
+        "currency": "SAR",
+        "status": "delivered",
+        "items": [
+          {
+            "_id": "item_001",
+            "productId": {
+              "_id": "prod_001",
+              "imageURLs": ["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"],
+              "title": "iPhone 15 Pro Max - 256GB"
+            },
+            "quantity": 1,
+            "price": 1049.99
+          }
+        ],
+        "createdAt": "2025-05-15T10:00:00.000Z"
+      },
+      {
+        "_id": "order_002",
+        "userId": "user_001",
+        "deliveryAddress": {
+          "_id": "addr_001",
+          "address": "123 King Fahd Road, Al Olaya District",
+          "city": "Riyadh",
+          "state": "Riyadh Province",
+          "country": "Saudi Arabia"
+        },
+        "paymentIntentId": "pi_2ABC789GHI012",
+        "amount": 579.98,
+        "currency": "SAR",
+        "status": "shipped",
+        "items": [
+          {
+            "_id": "item_002",
+            "productId": {
+              "_id": "prod_005",
+              "imageURLs": ["https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800"],
+              "title": "Sony WH-1000XM5 Headphones"
+            },
+            "quantity": 1,
+            "price": 329.99
+          },
+          {
+            "_id": "item_003",
+            "productId": {
+              "_id": "prod_012",
+              "imageURLs": ["https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800"],
+              "title": "Classic Leather Jacket - Black"
+            },
+            "quantity": 1,
+            "price": 249.99
+          }
+        ],
+        "createdAt": "2025-06-20T14:30:00.000Z"
+      },
+      {
+        "_id": "order_003",
+        "userId": "user_001",
+        "deliveryAddress": {
+          "_id": "addr_002",
+          "address": "456 Prince Sultan Street, Al Rawdah",
+          "city": "Jeddah",
+          "state": "Makkah Province",
+          "country": "Saudi Arabia"
+        },
+        "paymentIntentId": "pi_3DEF345JKL678",
+        "amount": 3199.99,
+        "currency": "SAR",
+        "status": "processing",
+        "items": [
+          {
+            "_id": "item_004",
+            "productId": {
+              "_id": "prod_003",
+              "imageURLs": ["https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800"],
+              "title": "MacBook Pro 16\" M3 Max"
+            },
+            "quantity": 1,
+            "price": 3199.99
+          }
+        ],
+        "createdAt": "2025-06-25T09:00:00.000Z"
+      },
+      {
+        "_id": "order_004",
+        "userId": "user_001",
+        "deliveryAddress": {
+          "_id": "addr_001",
+          "address": "123 King Fahd Road, Al Olaya District",
+          "city": "Riyadh",
+          "state": "Riyadh Province",
+          "country": "Saudi Arabia"
+        },
+        "paymentIntentId": "pi_4GHI901MNO234",
+        "amount": 164.97,
+        "currency": "SAR",
+        "status": "delivered",
+        "items": [
+          {
+            "_id": "item_005",
+            "productId": {
+              "_id": "prod_004",
+              "imageURLs": ["https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"],
+              "title": "Nike Air Max 270 React"
+            },
+            "quantity": 1,
+            "price": 119.99
+          },
+          {
+            "_id": "item_006",
+            "productId": {
+              "_id": "prod_009",
+              "imageURLs": ["https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800"],
+              "title": "Yoga Mat Premium - 6mm"
+            },
+            "quantity": 1,
+            "price": 44.99
+          }
+        ],
+        "createdAt": "2025-04-10T11:00:00.000Z"
+      }
+    ]
+  },
+
+  "trending_searches": {
+    "success": true,
+    "trendingSearches": [
+      {
+        "_id": "ts_001",
+        "trendingSearchTerm": "iPhone 15",
+        "occurrenceCount": 1542
+      },
+      {
+        "_id": "ts_002",
+        "trendingSearchTerm": "Samsung Galaxy",
+        "occurrenceCount": 1203
+      },
+      {
+        "_id": "ts_003",
+        "trendingSearchTerm": "Nike shoes",
+        "occurrenceCount": 987
+      },
+      {
+        "_id": "ts_004",
+        "trendingSearchTerm": "MacBook Pro",
+        "occurrenceCount": 876
+      },
+      {
+        "_id": "ts_005",
+        "trendingSearchTerm": "Summer dress",
+        "occurrenceCount": 754
+      },
+      {
+        "_id": "ts_006",
+        "trendingSearchTerm": "Wireless headphones",
+        "occurrenceCount": 698
+      },
+      {
+        "_id": "ts_007",
+        "trendingSearchTerm": "Espresso machine",
+        "occurrenceCount": 543
+      },
+      {
+        "_id": "ts_008",
+        "trendingSearchTerm": "Skincare serum",
+        "occurrenceCount": 432
+      },
+      {
+        "_id": "ts_009",
+        "trendingSearchTerm": "Fitness equipment",
+        "occurrenceCount": 398
+      },
+      {
+        "_id": "ts_010",
+        "trendingSearchTerm": "Leather jacket",
+        "occurrenceCount": 321
+      }
+    ]
+  },
+
+  "user": {
+    "_id": "user_001",
+    "email": "demo@trizy.app",
+    "userFirstName": "Ahmad",
+    "userLastName": "Demo",
+    "emailVerified": true,
+    "isSubscriber": true,
+    "hasActiveTrial": false
+  }
+}

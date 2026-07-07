@@ -4,6 +4,7 @@ import 'package:drift/native.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as p;
 import 'database_schema.dart';
+// ignore: uri_has_not_been_generated
 part 'app_database.g.dart';
 
 LazyDatabase _openConnection() {
@@ -20,5 +21,4 @@ class AppDatabase extends _$AppDatabase {
 
   @override
   int get schemaVersion => 1;
-
 }
